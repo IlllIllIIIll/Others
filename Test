@@ -13,17 +13,18 @@ for i,v in next, keys do
                 print("Enable FastLoad For Better Loading Times")
             end
             if functions["NameProtect"] == true then
-                print("Protecting Names")
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/IlllIllIIIll/Others/main/NameProtect"))();
             else
                 print("Enable Name Protect To Be Anonymous")
             end
             if functions["AntiAFK"] == true then
-                print("Enabled Anti-AFK")
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/IlllIllIIIll/Others/main/AntiAFK"))();
             else
                 print("Enable Anti-AFK To Not Be Kicked When Idle")
             end
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/IlllIllIIIll/Others/main/BlueApples"))();
             break
-        else
+        elseif v == false then
             print("Blacklisted.")
             break
         end
