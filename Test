@@ -7,13 +7,28 @@ for i,v in next, keys do
     if i == functions["Key"] then
         if v == true then
             print("Whitelisted")
+            if functions["FastLoad"] == true then
+                print("Loading Script With FastLoad")
+            else
+                print("Enable FastLoad For Better Loading Times")
+            end
+            if functions["NameProtect"] == true then
+                print("Protecting Names")
+            else
+                print("Enable Name Protect To Be Anonymous")
+            end
+            if functions["AntiAFK"] == true then
+                print("Enabled Anti-AFK")
+            else
+                print("Enable Anti-AFK To Not Be Kicked When Idle")
+            end
             break
         else
             print("Blacklisted.")
             break
         end
     else
-        print("Key Incorrect")
+        print("Invalid Key")
         break
     end
 end
